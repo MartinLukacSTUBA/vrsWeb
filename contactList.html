@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Title of the document</title>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
 </head>
+<body id="contact">
+  <div class="container">
+     <header class="header">
+            <img center width = 100% height=300px src="images/URK.png">
+            <br>
+            <a class="link-title" href="/">VRS final assignment</a>
+        
+    </header>
+    
+    <nav class="menu">
+        <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+        <a href="aboutUs.html">About us</a> &nbsp; &nbsp; &nbsp; 
+        <a href="liveStreamOfTello.html">LiveStream</a>&nbsp; &nbsp; &nbsp; 
+        <a href="contactList.html">Contact</a>&nbsp; &nbsp; &nbsp; 
+    </nav>
+    
 
-<body>
-The content of the document......
+
+    <article class="main">
+        <h1 class="page-heading">Contact</h1>   
+       <div id="form">
+          <form method="post" action="process.php">
+              <p>
+              <label for="name">Name:</label>
+              <input type="text" name="name" placeholder="Your Name" required> 
+              </p>             
+              <p>
+              <label for="name">Email:</label>
+              <input type="text" name="email" required>        
+              </p>      
+              <label for="name">Subject:</label>
+              <input type="text" name="subject" required>
+              <p> 
+            <label for="message"></label>
+            <textarea id="message" name="body" id="" cols="30" rows="10" required></textarea>
+              </p> 
+              <p>
+                <input id="submit" type="submit" name="submit" value="Send Message">
+              </p>            
+          </form>      
+       </div>
+    </article>
+
+     <footer>    
+        &copy; 2022 Vrs Website &nbsp;<span class="separator">|</span> Design by <a>ML</a>
+    </footer>
+    </div>
 </body>
-
 </html>
